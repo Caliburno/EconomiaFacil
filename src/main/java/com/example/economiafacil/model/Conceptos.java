@@ -4,15 +4,14 @@ public class Conceptos {
 
     String nombre;
     Categorias categoria;
-    Double monto;
 
     public Conceptos() {
     }
 
-    public Conceptos(String nombre, Categorias categoria, Double monto) {
+    public Conceptos(String nombre, Categorias categoria) {
         this.nombre = nombre;
         this.categoria = categoria;
-        this.monto = monto;
+
     }
 
     public String getNombre() {
@@ -29,14 +28,6 @@ public class Conceptos {
 
     public void setCategoria(Categorias categoria) {
         this.categoria = categoria;
-    }
-
-    public Double getMonto() {
-        return monto;
-    }
-
-    public void setMonto(Double monto) {
-        this.monto = monto;
     }
 
 }
