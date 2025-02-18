@@ -2,6 +2,8 @@ package com.example.economiafacil.model;
 
 public class Conceptos {
 
+//El concepto es el tipo de gasto o ingreso, es lo que le da un nombre y una clásificiación
+//Hay una lista de conceptos preestablecidos y cada concepto tiene una de las cinco categorías preestablecidas
     String nombre;
     String descripción;
     Categorias categoria;
@@ -13,7 +15,6 @@ public class Conceptos {
         this.nombre = nombre;
         this.descripción = descripcion;
         this.categoria = categoria;
-
     }
 
     public String getNombre() {

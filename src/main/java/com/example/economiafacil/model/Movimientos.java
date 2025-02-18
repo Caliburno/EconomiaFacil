@@ -2,15 +2,15 @@ package com.example.economiafacil.model;
 
 import java.time.LocalDateTime;
 
-public class Movimientos {
-    private Conceptos concepto;
-    private double monto;
-    private LocalDateTime hora;
+public class Movimientos { //El movimiento es el registro individual que ingresa el usuario
+    private Conceptos concepto; //Se elige un tipo de gasto o ingreso
+    private double monto; //Y se agrega cuánto dinero salió o entró
+    private LocalDateTime fecha; //Y se registra en qué fecha ocurrió el movimiento individual
 
-    public Movimientos(Conceptos concepto, double monto, LocalDateTime hora) {
+    public Movimientos(Conceptos concepto, double monto, LocalDateTime fecha) {
         this.concepto = concepto;
         this.monto = monto;
-        this.hora = hora;
+        this.fecha = fecha;
     }
 
     public Conceptos getConcepto() {
@@ -21,7 +21,7 @@ public class Movimientos {
         return monto;
     }
 
-    public LocalDateTime getHora() {
-        return hora;
+    public LocalDateTime getFecha() {
+        return fecha;
     }
 }
