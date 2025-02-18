@@ -12,9 +12,5 @@ public class Main {
 
         System.out.println("Ingrese un movimiento indicando concepto y monto"); //esto después es front, el print está para ir viendo
 
-        Movimientos movimiento = new Movimientos(ocio, entrada.nextDouble(), LocalDateTime.now()); //verificar cómo se pone un time stamp y que LocalDateTime.now() no se actualice constantemente
-       // registro
-
-
     }//fin main
 }
