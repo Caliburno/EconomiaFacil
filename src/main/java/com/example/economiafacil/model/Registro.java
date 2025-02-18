@@ -1,6 +1,7 @@
 package com.example.economiafacil.model;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
 
 public class Registro {
 
@@ -14,5 +15,9 @@ public class Registro {
     public List<Movimientos> getMovimientos() {
         return movimientos; //Devuelve la lista completa
     }
+
+    HashMap<Categorias, Double> totalesPorCategoria = new HashMap<>();
+
+
 
 }
