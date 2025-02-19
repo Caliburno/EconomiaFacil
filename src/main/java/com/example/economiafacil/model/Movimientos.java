@@ -7,6 +7,9 @@ public class Movimientos { //El movimiento es el registro individual que ingresa
     private double monto; //Y se agrega cuánto dinero salió o entró
     private LocalDateTime fecha; //Y se registra en qué fecha ocurrió el movimiento individual
 
+    public Movimientos() {
+    }
+
     public Movimientos(Conceptos concepto, double monto, LocalDateTime fecha) {
         this.concepto = concepto;
         this.monto = monto;
